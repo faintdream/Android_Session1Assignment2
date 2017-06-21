@@ -29,7 +29,7 @@ public class VariableScope {
         VariableScope vs = new VariableScope();
         vs.setLocalVar();
         vs.getInstanceVar();
-        System.out.println("I am a static var y: " +vs.y);
+        System.out.println("I am a static var y: " +VariableScope.y);
         vs.y=200;
         System.out.println("After editing static var the value of y: "+vs.y);
     }
