@@ -18,10 +18,10 @@ public class AssociatiivityOperations {
         int b=10;
         b= a-- - --a;// here     10=19 - 18 , so 
                         // 20-=18, result 2                     
-        System.out.println("int b= a-- - --a; : "+b);
+        System.out.println("int b= a-- - --a => "+b);
         int c=a--; // since c is just created we assign postfix a-- ?=18--, so
                     //c=18 ( & ais again decremented by 1, so a=17
-        System.out.println("int c=a--; : "+c);
+        System.out.println("int c=a--  => "+c);
         
         int d=a>>2; // here we are shifting 2 bits to right
                     // converting a =17 to binary by dividing a by half and ignoring reminder
@@ -35,7 +35,7 @@ public class AssociatiivityOperations {
                      // 2 bits from left
                      // result will be              0 1 0 0 0 1 0 0
                      //anyways, d is now 4
-        System.out.println("d=a>>2; : "+d);
+        System.out.println("d=a>>2 => "+d);
         int e=a&b;  // let's first get binary for a & b
                     // a=17 -> 0 0 0 1 0 0 0 1
                     // b=2 ->  0 0 0 0 0 0 1 0
@@ -43,7 +43,7 @@ public class AssociatiivityOperations {
                     //         ------------
                     //e=       0 0 0 0 0 0 0 0  
                     // convert binary to int e=0
-        System.out.println("int e=a&b; : "+e);
+        System.out.println("int e=a&b  => "+e);
     }
     /**
      * @param args the command line arguments
